@@ -1,0 +1,223 @@
+<!----tables in html-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables</title>
+</head>
+<body>
+    <table border="1" >
+        <caption>Student Data</caption>
+    
+        <tr>
+            <th>SL.N0</th>
+            <TH>NAME</TH>
+            <TH>AGE</TH>
+            <TH>BRANCH</TH>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>John</td>
+            <td>25</td>
+            <td>CSE</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Johnny</td>
+            <td>22</td>
+            <td>ECE</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Sundra</td>
+            <td>23</td>
+            <td>MECH</td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>Sundri</td>
+            <td>23</td>
+            <td>CIVIL</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+<br> <br>
+
+<!---EXAMPLE 2-->
+<table border="2">
+    <caption>Student Skill Data</caption>
+    <tr>
+        <th>SL.NO</th>
+        <th>NAME</th>
+        <th>STUDENT IMAGE</th>
+        <TH>SKILL</TH>
+        <TH>SKILL IMAGE</TH>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>John</td>
+        <td><img src="https://tse1.mm.bing.net/th?id=OIP.V-npon5vKnGejndvfEIOBwHaIz&pid=Api&P=0&h=180" alt="John's Image" height="100PX" width="100PX"></td>
+        <td>Python</td>
+        <td><img src="https://tse4.mm.bing.net/th?id=OIP.jLDVKdeMBFwpzkOj9wmIVAHaHa&pid=Api&P=0&h=180" alt="Python Image" height="100PX" width="100PX"></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Johnny</td>
+        <td><img src="https://tse1.mm.bing.net/th?id=OIP.V-npon5vKnGejndvfEIOBwHaIz&pid=Api&P=0&h=180" alt="Python Image" height="100PX" width="100PX"></td></td>
+        <td>Java</td>
+        <td><img src="https://tse3.mm.bing.net/th?id=OIP.M44Ib9sh4WyDYhtdjwOpvwHaHa&pid=Api&P=0&h=180" alt="Java Image" height="100PX" width="100PX"></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Sundra</td>
+        <td><img src="https://via.placeholder.com/50" alt="Sundra's Image"></td>
+        <td>HTML</td>
+        <td><img src="https://via.placeholder.com/50" alt="HTML Image"></td>
+
+    </tr>
+
+    <tr>
+        <td>4</td>
+        <td>Sundri</td>
+        <td><img src="https://via.placeholder.com/50" alt="Sundri's Image"></td>
+        <td>CSS</td>
+        <td><img src="https://via.placeholder.com/50" alt="CSS Image"></td>
+</table>
+
+
+<br> <br>
+
+<!-----ROWSPAN AND COLSPAN-
+1.COLSPAN--TO MERGE MULTIPLE COLUMN(HORIZONTALLLY)-->
+
+<h3>Example 1 of colspan</h3>
+<Table border="3">
+    <TR> <TH colspan="2">MILK PRODUCTS</TH></TR>
+    <TR>
+        <TH>NAME </TH>
+        <TH>PRICE</TH>
+    </TR>
+    <TR>
+        <TD>Milk</TD>
+        <TD>40</TD>
+    </TR>
+    <TR>
+        <TD>Curd</TD>
+        <TD>30</TD>
+    </TR>
+    <TR>
+        <TD>Ghee</TD>
+        <td>250</td>
+    </TR>
+    <tr>
+        <td colspan="2">These are exclusive</td>
+    </tr>
+</Table>
+
+
+
+<br> <br>
+<h3>Example 1 of rowspan</h3>
+<table border="3">
+    <tr>
+        <th> Name </th>
+        <th>Companies</th>
+    </tr>
+    <tr>
+        <td rowspan="3">John</td>
+        <td>Google</td>
+    </tr>
+    <tr>
+        <td>Microsoft</td>
+    </tr>
+    <tr>
+        <td>Amazon</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Johnny</td>
+        <td>Facebook</td>
+    </tr>
+    <tr>
+        <td>Twitter</td>
+    </tr>
+</table>
+
+
+<BR></BR> 
+<h3>Example 1 of row and column span</h3>
+<table border="2">
+    <tr>
+        <th colspan="4">STudent & Employee Data</th>
+    </tr>
+    <tr>
+        <th colspan="2"> Stduent Data</th>
+        <th colspan="2"> Employee Data</th>
+
+    </tr>
+    <tr>
+        <th>NAME</th>
+        <TH>CLASS</TH>
+        <TH>Name</TH>
+        <TH>Salary</TH>
+    </tr>
+    <TR>
+        <td>John</td>
+        <td>10</td>
+        <td>Johnny</td>
+        <td rowspan="2">50000</td>
+    </TR>
+    <TR>
+        <TD>GANESH</TD>
+        <TD rowspan="2">8</TD>
+        <TD>RAMARAO</TD>
+
+    </TR>
+    <TR>
+        <TD>VIJAY</TD>
+        <TD>CHALAPATHI RAO</TD>
+        <TD>18,300</TD>
+
+    </TR>
+</table>
+
+
+<br><br>
+<h3>Example 2 of row and column span</h3>
+<table border="1">
+    
+    <tr>
+    <th rowspan="2">Station</th>
+    <th colspan="2">Temperature</th>
+    
+    <th rowspan="2"> Humidity</th>
+    <th rowspan="2">Weather</th>
+
+    <tr>
+    <th>max</th>
+    <th>min</th> 
+    </tr>
+
+    <tr>
+        <td>USA</td>
+        <td>24</td>
+        <td>19</td>
+        <td>60%</td>
+        <td>cloudy</td>
+    </tr>
+    <tr>
+        <td>germany</td>
+        <td>5</td>
+        <td>-1</td>
+        <td>70%</td>
+        <td>rainy</td>
+    </tr>
+</table>
